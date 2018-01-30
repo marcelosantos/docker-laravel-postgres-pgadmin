@@ -17,20 +17,6 @@ services:
     networks:
       app-env:
 
-  #php-app:
-  #  build: ./app
-  #  image: myapp
-  #  container_name: php-app
-  #  env_file:
-  #    - ./env
-  #  depends_on:
-  #    - postgres
-  #  command: ["./wait-for-postgres.sh", "", "apache2-foreground"]
-  #  ports:
-  #    - 80:80
-  #  networks:
-  #    app-env:
-
   postgres:
     image: postgres:9.6
     container_name: postgres
